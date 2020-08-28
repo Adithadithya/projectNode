@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^1.5.2",
+    "@subash036/dateutc": "^1.0.2",
+    "applicable-resolver": "^1.2.0",
+    "async": "^2.6.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "date-diff": "^0.2.0",
+    "debug": "~2.6.9",
+    "dotenv": "^7.0.0",
+    "dwd-adaptor": "^1.0.35",
+    "ejs": "~2.5.7",
+    "exceljs": "^3.8.2",
+    "express": "~4.16.0",
+    "googleapis": "^27.0.0",
+    "hcm-utils-wrapper": "^1.0.0",
+    "http-errors": "~1.6.2",
+    "joi": "^13.4.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.1.5",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.0",
+    "mustache": "^3.0.1",
+    "node-excel-export": "^1.4.4",
+    "node-linkedin": "^0.5.6",
+    "nodemailer": "^4.7.0",
+    "pg": "^8.3.0",
+    "pg-format": "^1.0.4",
+    "request": "^2.87.0",
+    "simple-oauth2": "^2.2.1"
+  }
+}

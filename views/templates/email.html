@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0;" name="viewport">
+    <title>Excelity</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ::selection {
+            background: #373b46;
+            color: #fff;
+            /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: #373b46;
+            color: #fff;
+            /* Gecko Browsers */
+        }
+
+        /* Responsive */
+
+        @media screen and (max-width: 640px) {
+            /* Tables 
+        parameters: width, alignment, padding */
+            body {
+                width: 100% !important;
+            }
+
+            table[class=scale] {
+                width: 100% !important;
+            }
+            .full-width {
+                width: 100% !important;
+            }
+            table[class=scale-center-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+            table[class=scale-center-bottom] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-bottom: 12px !important;
+            }
+            table[class=margin-center] {
+                margin: auto !important;
+            }
+            table[class=hide] {
+                display: none !important;
+            }
+            /* Td */
+            td[class=scale-center-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            td[class=scale-center-left] {
+                width: 100% !important;
+                text-align: right !important;
+            }
+            td[class=scale-center-bottom] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-bottom: 24px !important;
+            }
+            td[class=scale-center-bottom-both] {
+                width: 100% !important;
+                text-align: center !important;
+                padding-bottom: 12px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            td[class=scale-width0] {
+                width: 0% !important;
+            }
+            td[class=bottom12] {
+                padding-bottom: 12px !important;
+            }
+            td[class=bottom19] {
+                padding-bottom: 19px !important;
+            }
+            td[class=bottom21] {
+                padding-bottom: 21px !important;
+            }
+            td[class=height4] {
+                height: 4px !important;
+                font-size: 1px !important;
+            }
+            /* Img */
+            img[class="scale"] {
+                width: 100% !important;
+            }
+            img[class="reset"] {
+                width: 100% !important;
+            }
+            .no-border {
+                border: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0 auto; padding-top: 0; padding-bottom: 0; width: 650px;">
+    <table class="scale" align="center" border="0" cellpadding="0" cellspacing="0" width="650" bgcolor="#e0e2e1" style="border:1px solid #ccc; width:650px; max-width:650px; margin:0 auto;">
+        <tr>
+            <td colspan="3" height="25" align="left">&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="left"></td>
+            <td align="right">
+                <a href="https://www.excelityglobal.com/" style="border:0; text-decoration:none;" target="_blank">
+                    <img src="http://velocitaweb-uat.com/excelity/hcm-emailers/img/logo.png" alt="Excelity" style="display:block;">
+                </a>
+            </td>
+            <td align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="25" align="left">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td width="8%" align="left"></td>
+            <td width="84%" align="left">
+                <table width="100%" class="scale" bgcolor="#f3f3f5" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td height="50" width="9%" align="center" bgcolor="#e0e2e1"></td>
+                        <td rowspan="2" width="82%" align="center" bgcolor="<%= bgColor %>">
+                            <table width="100%" class="scale" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td height="57" align="center"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <img width="100" height="100" src="<%= notificationIcon %>" alt="Excelity" style="display:block;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" align="center"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; color:#ffffff; text-align:center;">
+                                        <%= notificationLabel %>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="50" align="center"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td bgcolor="#e0e2e1" height="50" width="9%" align="center"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">&nbsp;</td>
+                        <td align="center">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="25" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td height="10" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="justify" style="text-align: justify;font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#404041;">
+                            <%- messageBody %>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td height="10" colspan="3"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#404041;">
+                            Sed ut perspiciatis unde omnis iste natus error sit:
+                        </td>
+                        <td></td>
+                    </tr> -->
+
+                    <tr>
+                        <td height="20" colspan="3"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td align="left">
+                            <table class="scale" width="28%" cellspacing="0" cellpadding="0" bgcolor="#f37425" align="left">
+                                <tbody>
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff;" align="center">
+                                            <a href="#" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff; text-decoration:none;">LOREM IPSUM</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="8"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td></td>
+                    </tr> -->
+
+                    <tr>
+                        <td height="16" colspan="3"></td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#404041;">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                            quos dolores et quas.
+                        </td>
+                        <td></td>
+                    </tr> -->
+
+                    <tr>
+                        <td height="20" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#404041;">
+                            Cheers,
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td height="8" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left">
+                            <a href="https://www.excelityglobal.com/" style="border:0; text-decoration:none;" target="_blank">
+                                <img src="http://velocitaweb-uat.com/excelity/hcm-emailers/img/logo-footer.png" alt="Excelity" style="display:block;">
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td height="30" colspan="3"></td>
+                    </tr>
+
+                </table>
+            </td>
+            <td width="8%" align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="22" align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="12" align="left"></td>
+        </tr>
+
+        <tr>
+            <td align="left"></td>
+            <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#404041;">
+                <%= footerAddress %>
+            </td>
+            <td align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="12" align="left"></td>
+        </tr>
+
+        <tr>
+            <td align="left"></td>
+            <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#404041;">
+                <%= footerCopyright %>
+            </td>
+            <td align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="18" align="left"></td>
+        </tr>
+
+        <tr>
+            <td align="left"></td>
+            <td align="center">
+                <a href="<%= footerFacebook %>" style="border:0; text-decoration:none;" target="_blank">
+                    <img src="http://velocitaweb-uat.com/excelity/hcm-emailers/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="<%= footerTwitter %>" style="border:0; text-decoration:none;" target="_blank">
+                    <img src="http://velocitaweb-uat.com/excelity/hcm-emailers/img/twitter.png" alt="Twitter">
+                </a>
+                <a href="<%= footerLinkedin %>" style="border:0; text-decoration:none;" target="_blank">
+                    <img src="http://velocitaweb-uat.com/excelity/hcm-emailers/img/linkedin.png" alt="Linkedin">
+                </a>
+            </td>
+            <td align="left"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" height="25" align="left"></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
